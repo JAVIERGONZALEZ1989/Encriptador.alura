@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENCRIPTADOR </title>
+    <link rel="stylesheet" href="encriptador.css">
+</head>
+<body>
+    <main class="contenido">
+        <section class="parte1">
+            <div id="caja-ingresado">
+                <textarea name="" id="texto-ingresado" cols="30" rows="10" placeholder="Ingresa el texto aquí" pattern="[a-z]"></textarea>
+            </div>
+            <div id="contenedor-condiciones">
+                <label for="condiciones" id="condiciones">¡Solo letras en minuscula y sin acento!</label>
+            </div>
+            <div class="botones">
+                <button class="boton" id="boton-encriptar" value="encriptar!">Encriptar</button>
+                <button class="boton" id="boton-desencriptar" value="desencriptar!">Desencriptar</button>
+            </div>
+        </section>
+        <section class="parte2">
+                <div id="caja-encriptado">
+                <textarea name="texto-encriptado" id="texto-encriptado" cols="30" rows="10"></textarea>
+                </div>
+                <img src="muneco2.png" alt="muneco" id="muneco">
+                    <div class="mensaje2">
+                         <label for="mensaje-encriptado/desencriptado" id="mensaje2-1"name="mensaje-encriptado/desencriptado">
+                            <strong>Ningún mensaje fue encontrado</strong>
+                        </label>
+                        <br>
+                        <br>
+                        <label for="mensaje-encriptado/desencriptado" id="mensaje2-2" name="mensaje-encriptado/desencriptado" >
+                            Ingrese el texto que desea encriptar o desencriptar
+                        </label>
+                    </div>
+                <div class="contenedor-boton-copiar">
+                    <button id="boton-copiar">copiar</button>
+                </div>
+        </section>
+        <footer>
+            <label for="" id="creado"> Creado por <a href="https://github.com/JAVIERGONZALEZ1989">Javier Gonzalez</a></label>
+        </footer>
+    </main>
+    <script src="encriptador.js"></script>
+</body>
+</html>
